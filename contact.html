@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – FreeLegalFormat.in</title>
+  <meta name="description" content="Get in touch with the FreeLegalFormat.in team. We'd love to hear your feedback, suggestions, or questions about our free legal document tools.">
+  <link rel="canonical" href="https://www.freelegalformat.in/contact.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy: { 50:'#f0f4ff', 600:'#1A3A7C', 700:'#0F2557', 800:'#0a1840', 900:'#060e28' },
+          gold:  { 400:'#D4B450', 500:'#C9A84C', 600:'#A8873A' }
+        },
+        fontFamily: { serif:['"Playfair Display"','Georgia','serif'], sans:['Inter','system-ui','sans-serif'] }
+      }}
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family:'Inter',system-ui,sans-serif; background:#F8FAFF; color:#1A1A2E; }
+    .input-field {
+      width:100%; border:1.5px solid #e2e8f0; border-radius:10px;
+      padding:10px 14px; font-size:14px; color:#1a1a2e; background:#fff;
+      transition:all .2s; outline:none;
+    }
+    .input-field:focus { border-color:#0F2557; box-shadow:0 0 0 3px rgba(15,37,87,.08); }
+    .input-field::placeholder { color:#9ca3af; }
+    label { display:block; font-size:13px; font-weight:600; color:#374151; margin-bottom:6px; }
+    .gold-top { border-top:3px solid #C9A84C; }
+    .success-box { display:none; }
+    .success-box.show { display:block; }
+  </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7ELWQ0KR9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M7ELWQ0KR9');
+</script>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="bg-navy-700 border-b-2 border-gold-500 sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16 gap-4">
+      <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
+        <div class="w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center shadow">
+          <span class="text-navy-700 font-bold text-base leading-none">⚖</span>
+        </div>
+        <span class="font-serif text-white text-lg font-bold tracking-tight">
+          FreeLegal<span class="text-gold-400">Format</span><span class="text-gray-500 text-sm">.in</span>
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-5">
+        <a href="index.html"    class="text-gray-300 hover:text-gold-400 text-sm font-medium transition-colors">Home</a>
+        <a href="about-us.html" class="text-gray-300 hover:text-gold-400 text-sm font-medium transition-colors">About Us</a>
+        <a href="blog.html"     class="text-gray-300 hover:text-gold-400 text-sm font-medium transition-colors">Blog</a>
+        <a href="contact.html"  class="text-gold-400 text-sm font-semibold border-b border-gold-400 pb-0.5">Contact</a>
+      </nav>
+      <a href="index.html" class="bg-gold-500 hover:bg-gold-400 text-navy-900 text-xs font-bold px-4 py-2 rounded-lg transition-colors flex-shrink-0">Use Free Tools →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ══ PAGE HERO ══ -->
+<section class="bg-navy-700 text-white py-14 relative overflow-hidden">
+  <div class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-gold-600 via-gold-300 to-gold-600"></div>
+  <div class="absolute inset-0 opacity-5 select-none pointer-events-none">
+    <div class="absolute top-0 right-0 text-[150px] font-serif">✉</div>
+  </div>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center relative z-10">
+    <div class="w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+      <span class="text-xl">✉️</span>
+    </div>
+    <h1 class="font-serif text-3xl sm:text-4xl font-extrabold mb-3">Contact Us</h1>
+    <p class="text-gray-300 text-base leading-relaxed">Have a question, suggestion, or found a bug? We'd love to hear from you. We typically respond within 24–48 hours.</p>
+  </div>
+</section>
+
+<!-- ══ MAIN CONTENT ══ -->
+<main class="py-14 max-w-6xl mx-auto px-4 sm:px-6">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+    <!-- ── Contact Form (2/3 width) ── -->
+    <div class="lg:col-span-2">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 gold-top overflow-hidden">
+        <div class="bg-navy-700 px-7 py-5">
+          <h2 class="font-serif text-white text-xl font-bold">Send Us a Message</h2>
+          <p class="text-gray-400 text-xs mt-1">All fields marked with * are required.</p>
+        </div>
+        <div class="p-7">
+
+          <!-- Success message -->
+          <div id="success-box" class="success-box mb-5 bg-green-50 border border-green-200 rounded-xl p-4 flex items-start gap-3">
+            <span class="text-xl">✅</span>
+            <div>
+              <p class="font-bold text-green-800 text-sm">Message Sent Successfully!</p>
+              <p class="text-green-700 text-xs mt-0.5">Thank you for contacting us. We'll get back to you within 24–48 hours.</p>
+            </div>
+          </div>
+
+          <div class="space-y-5" id="contact-form">
+            <!-- Name & Email -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="c-name">Full Name *</label>
+                <input type="text" id="c-name" class="input-field" placeholder="Your full name">
+              </div>
+              <div>
+                <label for="c-email">Email Address *</label>
+                <input type="email" id="c-email" class="input-field" placeholder="your@email.com">
+              </div>
+            </div>
+
+            <!-- Subject type -->
+            <div>
+              <label for="c-subject-type">What is this about? *</label>
+              <select id="c-subject-type" class="input-field" style="cursor:pointer;">
+                <option value="">Select a topic…</option>
+                <option value="bug">🐛 Report a Bug / Error</option>
+                <option value="suggestion">💡 Feature Suggestion</option>
+                <option value="format">📄 Request a New Document Format</option>
+                <option value="legal">⚖️ Legal Question / Disclaimer</option>
+                <option value="partnership">🤝 Partnership / Collaboration</option>
+                <option value="press">📰 Press / Media Enquiry</option>
+                <option value="other">💬 Other</option>
+              </select>
+            </div>
+
+            <!-- Subject -->
+            <div>
+              <label for="c-subject">Subject *</label>
+              <input type="text" id="c-subject" class="input-field" placeholder="Brief subject of your message">
+            </div>
+
+            <!-- Language preference -->
+            <div>
+              <label for="c-lang">Your Preferred Language</label>
+              <select id="c-lang" class="input-field" style="cursor:pointer;">
+                <option value="english">English</option>
+                <option value="hindi">हिंदी (Hindi)</option>
+                <option value="bengali">বাংলা (Bengali)</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="c-message">Your Message *</label>
+              <textarea id="c-message" rows="5" class="input-field" placeholder="Please describe your question or feedback in detail. The more information you provide, the better we can help you." style="resize:vertical;"></textarea>
+              <p class="text-gray-400 text-xs mt-1" id="char-count">0 / 1000 characters</p>
+            </div>
+
+            <!-- Disclaimer checkbox -->
+            <div class="flex items-start gap-3">
+              <input type="checkbox" id="c-agree" class="mt-0.5 w-4 h-4 accent-navy-700 cursor-pointer flex-shrink-0">
+              <label for="c-agree" class="text-xs text-gray-500 font-normal cursor-pointer leading-relaxed">
+                I understand that FreeLegalFormat.in does not provide legal advice. This contact form is for feedback and website-related queries only. For specific legal help, I will consult a qualified lawyer.
+              </label>
+            </div>
+
+            <!-- Error message -->
+            <div id="form-error" class="hidden bg-red-50 border border-red-200 rounded-lg p-3 text-red-700 text-sm">
+              ⚠️ Please fill in all required fields and check the agreement box before submitting.
+            </div>
+
+            <!-- Submit -->
+            <button onclick="submitForm()" class="w-full bg-navy-700 hover:bg-navy-800 text-white font-bold py-3.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2 shadow-md">
+              <span>📨</span> <span>Send Message</span>
+            </button>
+            <p class="text-center text-gray-400 text-xs">We do not share your email. Typical response time: 24–48 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Sidebar (1/3 width) ── -->
+    <div class="space-y-5">
+
+      <!-- Contact info card -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 gold-top">
+        <h3 class="font-serif text-lg text-navy-700 font-bold mb-5">Get in Touch</h3>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 bg-navy-50 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="text-lg">📧</span>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Email</p>
+              <a href="mailto:hello@freelegalformat.in" class="text-navy-700 text-sm font-medium hover:text-gold-600 transition-colors">hello@freelegalformat.in</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 bg-navy-50 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="text-lg">⏱️</span>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Response Time</p>
+              <p class="text-navy-700 text-sm font-medium">Within 24–48 hours</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 bg-navy-50 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="text-lg">🌐</span>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Website</p>
+              <p class="text-navy-700 text-sm font-medium">www.freelegalformat.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Card -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 gold-top">
+        <h3 class="font-serif text-lg text-navy-700 font-bold mb-4">Quick Answers</h3>
+        <div class="space-y-4">
+          <div>
+            <p class="text-xs font-bold text-navy-700 mb-1">Is this website really free?</p>
+            <p class="text-xs text-gray-500 leading-relaxed">Yes, completely. We run on ad revenue so you don't pay a rupee.</p>
+          </div>
+          <div class="border-t pt-3">
+            <p class="text-xs font-bold text-navy-700 mb-1">Do you save my data?</p>
+            <p class="text-xs text-gray-500 leading-relaxed">No. All document data stays in your browser only. We never see it.</p>
+          </div>
+          <div class="border-t pt-3">
+            <p class="text-xs font-bold text-navy-700 mb-1">Can I suggest a new format?</p>
+            <p class="text-xs text-gray-500 leading-relaxed">Absolutely! Use the form and select "Request a New Document Format".</p>
+          </div>
+          <div class="border-t pt-3">
+            <p class="text-xs font-bold text-navy-700 mb-1">Do you provide legal advice?</p>
+            <p class="text-xs text-gray-500 leading-relaxed">No. Our formats are drafts only. Please consult a lawyer for specific legal issues.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools shortcut -->
+      <div class="bg-navy-700 rounded-2xl p-6 text-center text-white">
+        <div class="text-3xl mb-3">⚖️</div>
+        <h3 class="font-serif text-base font-bold mb-2">Need a Legal Document?</h3>
+        <p class="text-gray-400 text-xs mb-4 leading-relaxed">Go straight to our free tools and generate your draft in under 2 minutes.</p>
+        <a href="index.html" class="block bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold text-sm py-2.5 rounded-xl transition-colors">Use Free Tools →</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="bg-navy-900 text-gray-400 py-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <p>© 2025 FreeLegalFormat.in. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="privacy-policy.html" class="hover:text-gold-400 transition-colors">Privacy Policy</a>
+        <span class="text-gray-700">|</span>
+        <a href="about-us.html"       class="hover:text-gold-400 transition-colors">About Us</a>
+        <span class="text-gray-700">|</span>
+        <a href="index.html"          class="hover:text-gold-400 transition-colors">Home</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Character counter
+const msgEl = document.getElementById('c-message');
+const countEl = document.getElementById('char-count');
+if (msgEl && countEl) {
+  msgEl.addEventListener('input', () => {
+    const len = msgEl.value.length;
+    countEl.textContent = len + ' / 1000 characters';
+    countEl.style.color = len > 900 ? '#ef4444' : '#9ca3af';
+    if (msgEl.value.length > 1000) msgEl.value = msgEl.value.slice(0, 1000);
+  });
+}
+
+function submitForm() {
+  const name     = document.getElementById('c-name').value.trim();
+  const email    = document.getElementById('c-email').value.trim();
+  const subject  = document.getElementById('c-subject').value.trim();
+  const subjType = document.getElementById('c-subject-type').value;
+  const message  = document.getElementById('c-message').value.trim();
+  const agreed   = document.getElementById('c-agree').checked;
+  const errBox   = document.getElementById('form-error');
+
+  // Basic validation
+  if (!name || !email || !subject || !subjType || !message || !agreed) {
+    errBox.classList.remove('hidden');
+    errBox.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    return;
+  }
+  // Basic email format check
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    errBox.textContent = '⚠️ Please enter a valid email address.';
+    errBox.classList.remove('hidden');
+    return;
+  }
+
+  errBox.classList.add('hidden');
+
+  // Simulate form submission (static site — would hook to Formspree/Web3Forms in production)
+  const btn = document.querySelector('button[onclick="submitForm()"]');
+  btn.innerHTML = '<span class="animate-spin">⏳</span> Sending…';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    document.getElementById('contact-form').style.opacity = '0.3';
+    document.getElementById('contact-form').style.pointerEvents = 'none';
+    document.getElementById('success-box').classList.add('show');
+    document.getElementById('success-box').scrollIntoView({ behavior:'smooth', block:'nearest' });
+  }, 1400);
+}
+</script>
+
+</body>
+</html>

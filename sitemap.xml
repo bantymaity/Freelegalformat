@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml — FreeLegalFormat.in
+  Generated: June 2026
+  Submit to: https://search.google.com/search-console
+  Verify at: https://www.xml-sitemaps.com/validate-xml-sitemap.html
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ══════════════════════════════════════════════
+       HOMEPAGE  (Priority: 1.0 — Most important page)
+  ══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.freelegalformat.in/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <!-- hreflang: page serves EN, HI, BN via JS language toggle -->
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.freelegalformat.in/"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.freelegalformat.in/"/>
+    <xhtml:link rel="alternate" hreflang="bn-IN" href="https://www.freelegalformat.in/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freelegalformat.in/"/>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
+       TOOL SECTIONS (Priority: 0.9 — Core product pages)
+       Note: These are anchor (#) links on the homepage.
+       Including them helps Google understand the page
+       structure and may generate sitelinks in SERPs.
+  ══════════════════════════════════════════════ -->
+
+  <!-- Tool 1: Police GD / Complaint Generator -->
+  <url>
+    <loc>https://www.freelegalformat.in/#police</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tool 2: Online Shopping Refund Complaint -->
+  <url>
+    <loc>https://www.freelegalformat.in/#shopping</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tool 3: ATM / UPI / Bank Complaint -->
+  <url>
+    <loc>https://www.freelegalformat.in/#atm</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tool 4: GST Invoice Generator -->
+  <url>
+    <loc>https://www.freelegalformat.in/#gst</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tool 5: HR & Employment Letters -->
+  <url>
+    <loc>https://www.freelegalformat.in/#hr</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tool 6: Affidavit Maker -->
+  <url>
+    <loc>https://www.freelegalformat.in/#affidavit</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
+       MAIN PAGES (Priority: 0.8)
+  ══════════════════════════════════════════════ -->
+
+  <!-- About Us -->
+  <url>
+    <loc>https://www.freelegalformat.in/about-us.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Archive -->
+  <url>
+    <loc>https://www.freelegalformat.in/blog.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
+       SUPPORTING PAGES (Priority: 0.7)
+  ══════════════════════════════════════════════ -->
+
+  <!-- Contact Us -->
+  <url>
+    <loc>https://www.freelegalformat.in/contact.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Article Template (How to File a Police Complaint) -->
+  <url>
+    <loc>https://www.freelegalformat.in/single-post.html</loc>
+    <lastmod>2025-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
+       LEGAL / POLICY PAGES (Priority: 0.5)
+  ══════════════════════════════════════════════ -->
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.freelegalformat.in/privacy-policy.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
