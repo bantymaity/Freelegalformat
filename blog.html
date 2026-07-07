@@ -33,15 +33,6 @@
     .gold-top { border-top:3px solid #C9A84C; }
     .featured-card { background: linear-gradient(135deg, #0F2557 60%, #1A3A7C 100%); }
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M7ELWQ0KR9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-M7ELWQ0KR9');
-</script>
 </head>
 <body>
 
@@ -84,11 +75,6 @@
     <p class="text-gray-300 text-base leading-relaxed mb-7">
       Simple, practical articles to help you understand your rights and navigate legal situations — written in plain language for ordinary citizens.
     </p>
-    <!-- Search bar (visual only on static site) -->
-    <div class="relative max-w-lg mx-auto">
-      <input type="text" placeholder="Search articles… (e.g. police complaint, GST, refund)" class="w-full bg-white text-gray-800 rounded-xl px-5 py-3.5 text-sm focus:outline-none shadow-lg pr-14">
-      <button class="absolute right-2 top-1.5 bg-gold-500 hover:bg-gold-600 text-white font-bold px-4 py-2 rounded-lg text-sm transition-colors">Search</button>
-    </div>
   </div>
 </section>
 
@@ -110,7 +96,7 @@
 <!-- ══ BLOG GRID ══ -->
 <main class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
 
-  <!-- Featured Article -->
+  <!-- Featured Article (আমি এটি স্ট্যাটিক রেখেছি, যাতে আপনি আপনার সেরা পোস্টটি এখানে ফিক্সড রাখতে পারেন) -->
   <div class="mb-10">
     <p class="text-xs font-bold uppercase tracking-widest text-gold-600 mb-3">⭐ Featured Article</p>
     <a href="single-post.html" class="block card-hover featured-card rounded-2xl overflow-hidden shadow-lg">
@@ -118,19 +104,17 @@
         <div class="p-8 md:p-10 flex flex-col justify-center">
           <div class="flex items-center gap-2 mb-4">
             <span class="tag tag-police">Police</span>
-            <span class="text-gray-400 text-xs">15 min read</span>
           </div>
           <h2 class="font-serif text-white text-2xl md:text-3xl font-bold leading-tight mb-3">
-            How to File a Police Complaint in India: Complete Step-by-Step Guide (2025)
+            How to File a Police Complaint in India: Complete Step-by-Step Guide
           </h2>
           <p class="text-gray-300 text-sm leading-relaxed mb-5">
-            Learn exactly how to write and file a police complaint (FIR or GD entry) in India — what to write, where to go, what your rights are, and how to follow up if the police refuse to register your complaint.
+            Learn exactly how to write and file a police complaint (FIR or GD entry) in India — what to write, where to go, and what your rights are.
           </p>
           <div class="flex items-center gap-3">
             <div class="w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center text-sm">✍</div>
             <div>
-              <p class="text-white text-xs font-semibold">Adv. Meena Joshi</p>
-              <p class="text-gray-400 text-xs">June 10, 2025</p>
+              <p class="text-white text-xs font-semibold">FreeLegalFormat Team</p>
             </div>
           </div>
         </div>
@@ -144,260 +128,37 @@
     </a>
   </div>
 
-  <!-- Article Grid -->
+  <!-- 🌟 AUTOMATIC ARTICLE GRID (লুপ) 🌟 -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="blog-grid">
 
-    <!-- Article 1 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="consumer">
-      <a href="single-post.html">
-        <div class="bg-amber-50 flex items-center justify-center py-8">
-          <span class="text-5xl">🛒</span>
+    {% for post in collections.post reversed %}
+    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="{{ post.data.category | default: 'legal' }}">
+      <a href="{{ post.url }}">
+        <div class="{{ post.data.bg_color | default: 'bg-blue-50' }} flex items-center justify-center py-8">
+          <span class="text-5xl">{{ post.data.icon | default: '📜' }}</span>
         </div>
         <div class="p-5">
           <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-consumer">Consumer Rights</span>
-            <span class="text-gray-400 text-xs">8 min read</span>
+            <span class="tag {{ post.data.tag_class | default: 'tag-legal' }}">{{ post.data.category_name | default: 'General Legal' }}</span>
+            <span class="text-gray-400 text-xs">{{ post.data.read_time | default: '5 min read' }}</span>
           </div>
           <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            Amazon / Flipkart Refused Your Refund? Here's What to Do
+            {{ post.data.title }}
           </h3>
           <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            Step-by-step guide on how to escalate and legally demand a refund from online shopping platforms. Includes consumer forum filing tips.
+            {{ post.data.description | default: 'Read this detailed legal guide to understand your rights and the complete procedures.' }}
           </p>
           <div class="flex items-center justify-between border-t pt-3">
             <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-gold-500 rounded-full flex items-center justify-center text-xs text-white font-bold">P</div>
-              <span class="text-gray-500 text-xs">Priya Das</span>
+              <div class="w-6 h-6 bg-gold-500 rounded-full flex items-center justify-center text-xs text-white font-bold">{{ post.data.author_initial | default: 'A' }}</div>
+              <span class="text-gray-500 text-xs">{{ post.data.author | default: 'Admin' }}</span>
             </div>
-            <span class="text-gray-400 text-xs">May 28, 2025</span>
+            <span class="text-gray-400 text-xs">{{ post.data.date }}</span>
           </div>
         </div>
       </a>
     </article>
-
-    <!-- Article 2 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="banking">
-      <a href="single-post.html">
-        <div class="bg-green-50 flex items-center justify-center py-8">
-          <span class="text-5xl">🏧</span>
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-banking">Banking</span>
-            <span class="text-gray-400 text-xs">10 min read</span>
-          </div>
-          <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            UPI Payment Failed but Money Deducted? How to Get a Refund
-          </h3>
-          <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            RBI guidelines on failed UPI transactions, timelines for reversal, how to complain to your bank, and when to escalate to the Banking Ombudsman.
-          </p>
-          <div class="flex items-center justify-between border-t pt-3">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-navy-700 rounded-full flex items-center justify-center text-xs text-white font-bold">A</div>
-              <span class="text-gray-500 text-xs">Arjun Sharma</span>
-            </div>
-            <span class="text-gray-400 text-xs">May 20, 2025</span>
-          </div>
-        </div>
-      </a>
-    </article>
-
-    <!-- Article 3 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="tax">
-      <a href="single-post.html">
-        <div class="bg-pink-50 flex items-center justify-center py-8">
-          <span class="text-5xl">🧾</span>
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-tax">GST & Tax</span>
-            <span class="text-gray-400 text-xs">12 min read</span>
-          </div>
-          <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            GST Invoice Format for Small Businesses: Everything You Need to Know
-          </h3>
-          <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            What must a GST invoice contain? CGST vs IGST, HSN codes, e-invoicing rules — explained in simple language for small business owners.
-          </p>
-          <div class="flex items-center justify-between border-t pt-3">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-gold-500 rounded-full flex items-center justify-center text-xs text-white font-bold">M</div>
-              <span class="text-gray-500 text-xs">Adv. Meena Joshi</span>
-            </div>
-            <span class="text-gray-400 text-xs">May 14, 2025</span>
-          </div>
-        </div>
-      </a>
-    </article>
-
-    <!-- Article 4 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="hr">
-      <a href="single-post.html">
-        <div class="bg-purple-50 flex items-center justify-center py-8">
-          <span class="text-5xl">💼</span>
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-hr">HR & Employment</span>
-            <span class="text-gray-400 text-xs">7 min read</span>
-          </div>
-          <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            How to Write a Resignation Letter in India (With Sample)
-          </h3>
-          <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            Everything about resignation letters — notice period rules, what to write, how to handle a company that refuses to accept, and your legal rights.
-          </p>
-          <div class="flex items-center justify-between border-t pt-3">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-navy-700 rounded-full flex items-center justify-center text-xs text-white font-bold">P</div>
-              <span class="text-gray-500 text-xs">Priya Das</span>
-            </div>
-            <span class="text-gray-400 text-xs">May 5, 2025</span>
-          </div>
-        </div>
-      </a>
-    </article>
-
-    <!-- Article 5 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="legal">
-      <a href="single-post.html">
-        <div class="bg-blue-50 flex items-center justify-center py-8">
-          <span class="text-5xl">📜</span>
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-legal">General Legal</span>
-            <span class="text-gray-400 text-xs">9 min read</span>
-          </div>
-          <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            What is an Affidavit? When Do You Need One and How to Make It?
-          </h3>
-          <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            Simple explanation of what an affidavit is, the different types (gap year, name change, income, address), stamp paper value, and how to get it notarised.
-          </p>
-          <div class="flex items-center justify-between border-t pt-3">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-gold-500 rounded-full flex items-center justify-center text-xs text-white font-bold">M</div>
-              <span class="text-gray-500 text-xs">Adv. Meena Joshi</span>
-            </div>
-            <span class="text-gray-400 text-xs">April 28, 2025</span>
-          </div>
-        </div>
-      </a>
-    </article>
-
-    <!-- Article 6 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="consumer">
-      <a href="single-post.html">
-        <div class="bg-red-50 flex items-center justify-center py-8">
-          <span class="text-5xl">⚖️</span>
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-consumer">Consumer Rights</span>
-            <span class="text-gray-400 text-xs">11 min read</span>
-          </div>
-          <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            How to File a Consumer Court Complaint in India (2025 Guide)
-          </h3>
-          <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            Complete guide to filing a complaint in the District Consumer Disputes Redressal Commission — eligibility, fees, documents needed, and realistic timelines.
-          </p>
-          <div class="flex items-center justify-between border-t pt-3">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-navy-700 rounded-full flex items-center justify-center text-xs text-white font-bold">A</div>
-              <span class="text-gray-500 text-xs">Arjun Sharma</span>
-            </div>
-            <span class="text-gray-400 text-xs">April 18, 2025</span>
-          </div>
-        </div>
-      </a>
-    </article>
-
-    <!-- Article 7 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="police">
-      <a href="single-post.html">
-        <div class="bg-indigo-50 flex items-center justify-center py-8">
-          <span class="text-5xl">📱</span>
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-police">Police</span>
-            <span class="text-gray-400 text-xs">6 min read</span>
-          </div>
-          <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            Cheated Online? How to File a Cyber Crime Complaint in India
-          </h3>
-          <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            Steps to report online fraud, phishing, social media harassment, and financial cyber crimes to the Cyber Crime Portal and local police.
-          </p>
-          <div class="flex items-center justify-between border-t pt-3">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-gold-500 rounded-full flex items-center justify-center text-xs text-white font-bold">P</div>
-              <span class="text-gray-500 text-xs">Priya Das</span>
-            </div>
-            <span class="text-gray-400 text-xs">April 10, 2025</span>
-          </div>
-        </div>
-      </a>
-    </article>
-
-    <!-- Article 8 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="banking">
-      <a href="single-post.html">
-        <div class="bg-teal-50 flex items-center justify-center py-8">
-          <span class="text-5xl">🏦</span>
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-banking">Banking</span>
-            <span class="text-gray-400 text-xs">8 min read</span>
-          </div>
-          <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            RBI Banking Ombudsman: How to Complain Against Your Bank
-          </h3>
-          <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            When your bank ignores you, the Banking Ombudsman is your next step. Learn what issues are covered, how to file, and what to expect.
-          </p>
-          <div class="flex items-center justify-between border-t pt-3">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-navy-700 rounded-full flex items-center justify-center text-xs text-white font-bold">A</div>
-              <span class="text-gray-500 text-xs">Arjun Sharma</span>
-            </div>
-            <span class="text-gray-400 text-xs">March 30, 2025</span>
-          </div>
-        </div>
-      </a>
-    </article>
-
-    <!-- Article 9 -->
-    <article class="blog-card card-hover bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden" data-cat="hr">
-      <a href="single-post.html">
-        <div class="bg-yellow-50 flex items-center justify-center py-8">
-          <span class="text-5xl">📋</span>
-        </div>
-        <div class="p-5">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="tag tag-hr">HR & Employment</span>
-            <span class="text-gray-400 text-xs">9 min read</span>
-          </div>
-          <h3 class="font-serif text-navy-700 text-lg font-bold leading-tight mb-2">
-            Salary Certificate vs Salary Slip: What's the Difference and When You Need Each
-          </h3>
-          <p class="text-gray-500 text-xs leading-relaxed mb-4">
-            Confused about which document to ask your employer for? We explain the difference and when to use each for loan applications, visas, and more.
-          </p>
-          <div class="flex items-center justify-between border-t pt-3">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-gold-500 rounded-full flex items-center justify-center text-xs text-white font-bold">M</div>
-              <span class="text-gray-500 text-xs">Adv. Meena Joshi</span>
-            </div>
-            <span class="text-gray-400 text-xs">March 22, 2025</span>
-          </div>
-        </div>
-      </a>
-    </article>
+    {% endfor %}
 
   </div><!-- end grid -->
 
@@ -405,54 +166,13 @@
   <div id="no-results" class="hidden text-center py-14">
     <div class="text-5xl mb-4">🔍</div>
     <p class="text-gray-500 font-medium">No articles found in this category yet.</p>
-    <p class="text-gray-400 text-sm mt-1">Check back soon — we're always publishing new content!</p>
-  </div>
-
-  <!-- Pagination -->
-  <div class="mt-12 flex items-center justify-center gap-2">
-    <button class="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-500 cursor-not-allowed" disabled>← Prev</button>
-    <button class="px-4 py-2 rounded-lg bg-navy-700 text-white text-sm font-bold">1</button>
-    <button class="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-600 hover:bg-navy-50 transition-colors">2</button>
-    <button class="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-600 hover:bg-navy-50 transition-colors">3</button>
-    <button class="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-600 hover:bg-navy-50 transition-colors">Next →</button>
   </div>
 
 </main>
 
-<!-- ══ NEWSLETTER CTA ══ -->
-<section class="py-12 bg-navy-700 text-white">
-  <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-    <div class="text-3xl mb-3">📬</div>
-    <h2 class="font-serif text-2xl font-bold mb-2">Get New Articles in Your Inbox</h2>
-    <p class="text-gray-400 text-sm mb-6">We send simple, useful legal tips — no spam, no complicated language.</p>
-    <div class="flex gap-2 max-w-md mx-auto">
-      <input type="email" placeholder="your@email.com" class="flex-1 bg-white/10 border border-white/20 text-white placeholder-gray-500 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-400">
-      <button class="bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold text-sm px-5 py-3 rounded-xl transition-colors flex-shrink-0">Subscribe</button>
-    </div>
-    <p class="text-gray-600 text-xs mt-3">No spam. Unsubscribe anytime.</p>
-  </div>
-</section>
-
-<!-- ══ FOOTER ══ -->
-<footer class="bg-navy-900 text-gray-400 py-8">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-      <p>© 2025 FreeLegalFormat.in. All rights reserved.</p>
-      <div class="flex gap-4">
-        <a href="privacy-policy.html" class="hover:text-gold-400 transition-colors">Privacy Policy</a>
-        <span class="text-gray-700">|</span>
-        <a href="about-us.html"       class="hover:text-gold-400 transition-colors">About Us</a>
-        <span class="text-gray-700">|</span>
-        <a href="index.html"          class="hover:text-gold-400 transition-colors">Home</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
 <script>
-// Category filter
+// Category filter (এটি আগের মতোই কাজ করবে)
 function filterCat(cat) {
-  // Update button styles
   document.querySelectorAll('.cat-btn').forEach(btn => {
     btn.classList.remove('bg-navy-700','text-white','border-navy-700');
     btn.classList.add('border-gray-200','text-gray-600','bg-white');
