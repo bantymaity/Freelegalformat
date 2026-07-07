@@ -2,7 +2,7 @@
 layout: layout.html
 title: "How to File a Police Complaint in India: Step-by-Step Guide (2025)"
 description: "Complete step-by-step guide on filing a police complaint or FIR in India. Includes free draft generator."
-date: "June 10, 2025"
+date: "2025-06-10"
 ---
 
 ## 1. FIR vs. GD: What's the Difference?
