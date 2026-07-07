@@ -3,7 +3,7 @@ layout: layout.html
 tags: post
 title: "How to Draft a Legal Notice in India: A Step-by-Step Guide"
 description: "Learn the essential steps to draft and send a valid legal notice in India before filing a court case. Save time and lawyer fees."
-date: "July 07, 2026"
+date: 2026-07-07
 category: legal
 category_name: "General Legal"
 tag_class: tag-legal
