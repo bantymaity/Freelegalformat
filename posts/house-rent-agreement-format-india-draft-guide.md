@@ -2,7 +2,7 @@
 layout: layout.html
 title: "House Rent Agreement Format India: 11-Month Draft, Legal Clauses & Rules"
 description: "Download ready-to-use House Rent Agreement Format for India (11 Months). Learn stamp duty rules, essential legal clauses, notarization vs registration, and tenant rights."
-date: 2026-07-20
+date: "2026-07-19"
 display_date: "July 20, 2026"
 category: "Legal Formats"
 tags: ["Rent Agreement", "Legal Format", "House Rental Draft", "Leave and License", "Tenant Rights", "Property Law India"]
@@ -10,6 +10,7 @@ icon: "home"
 bg_color: "bg-indigo-50"
 tag_class: "text-indigo-600 bg-indigo-100"
 read_time: "11 min read"
+published: true
 ---
 
 ![House Rent Agreement Draft India](https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80)
@@ -74,7 +75,6 @@ Before signing on the dotted line, ensure your draft contains these non-negotiab
 
 You can copy the template text below, fill in your specific details inside the brackets `[ ... ]`, and print it on non-judicial stamp paper of appropriate value.
 
-```text
 RENT AGREEMENT / LEAVE AND LICENSE AGREEMENT
 
 This Rent Agreement is made and executed on this ______ day of ____________, 20____ at [City Name, State] by and between:
@@ -162,3 +162,51 @@ WITNESSES:
    Name: _______________________________                  Name: _______________________________
    Address: ____________________________                  Address: ____________________________
    Aadhaar No: _________________________                  Aadhaar No: _________________________
+
+---
+
+## Stamp Paper Value and Legal Notarization Rules in India
+
+To give legal enforceability to your rental agreement, printing it on plain paper is not sufficient. You must print the text on **non-judicial stamp paper** (or e-Stamp paper).
+
+### Required Stamp Duty Value State-Wise
+Stamp duty charges vary significantly across Indian states:
+
+* **Karnataka:** Rs. 100 or Rs. 200 stamp paper for 11 months (or 0.5% to 1% of total annual rent + deposit if calculated officially).
+* **Delhi / NCR:** Rs. 50 or Rs. 100 non-judicial stamp paper.
+* **Maharashtra:** Mandatory online registration via e-DS (e-Department of Stamps) portal. Stamp duty is calculated as 0.25% of total rent + deposit.
+* **West Bengal:** Rs. 50 or Rs. 100 non-judicial stamp paper for 11-month agreements.
+* **Tamil Nadu:** Rs. 20 to Rs. 100 non-judicial stamp paper.
+
+### Notarization vs. Sub-Registrar Registration
+* **Notarized Rent Agreement:** After printing the agreement on non-judicial stamp paper, both landlord and tenant sign each page in front of a licensed **Notary Public**. The notary verifies Aadhaar cards, attaches notary stamps, and signs the document. This is valid evidence of execution in Indian courts.
+* **Registered Rent Agreement:** Executed at the Sub-Registrar's office with biometrics and witness signatures. While mandatory for long-term leases (over 12 months), it provides the strongest evidentiary value in property disputes.
+
+---
+
+## 5 Common Rent Agreement Mistakes Tenants and Landlords Make
+
+1. **Not Documenting Security Deposit Transfer:** Always transfer the security deposit via online bank transfer (NEFT/UPI) or cheque so there is a digital paper trail. Never pay security deposit in unrecorded cash.
+2. **Ignoring the Inventory Checklist:** Failing to list existing damages (cracks in walls, broken tiles, faulty ACs) prior to moving in often leads to security deposit forfeiture during move-out. Always attach a signed inventory list.
+3. **Omitting Lock-In Period Penalty Details:** If a tenant leaves within 2 months during a 6-month lock-in period without clear penalty terms written down, landlords struggle to legally forfeit the deposit.
+4. **Using Generic Templates Without Local Customization:** Generic internet drafts often omit local municipal rules or RWA (Society) guidelines regarding pets, bachelor tenants, or parking spot allocations.
+5. **Failing to Conduct Police Verification:** In many major Indian metro cities (such as Delhi, Noida, Gurgaon, Mumbai, and Bangalore), **Tenant Police Verification** is legally mandatory. Skipping police verification can attract criminal charges under Section 188 of the Indian Penal Code (IPC) against the property owner.
+
+---
+
+## What is the Model Tenancy Act (MTA), 2021?
+
+To institutionalize rental housing across India, the Union Cabinet approved the **Model Tenancy Act (MTA)** in 2021. States are progressively adopting this framework. Key highlights include:
+
+* **Capped Security Deposit:** Maximum 2 months' rent for residential properties and 6 months' rent for commercial properties.
+* **Prohibition of Unannounced Entry:** Landlords must give at least 24 hours' prior written/digital notice before entering the premises.
+* **Revision of Rent:** Landlords cannot raise rent arbitrarily without giving at least 3 months' written notice.
+* **Rent Authorities:** Establishment of dedicated Rent Courts and Rent Tribunals for fast-track resolution of landlord-tenant disputes within 60 days.
+
+---
+
+## Conclusion
+
+A well-drafted 11-month House Rent Agreement is the single best insurance policy against property disputes and financial loss. Whether you are drafting a contract for a studio apartment, a 3BHK flat, or an independent house, always ensure the agreement is printed on appropriate non-judicial e-stamp paper, signed by two independent witnesses, and verified with valid ID proofs.
+
+*Disclaimer: This blog post and template are provided for informational and educational purposes only. Laws and stamp duty regulations vary by state. Consult a local legal advocate or property lawyer for tailored advice on specific rental transactions.*
