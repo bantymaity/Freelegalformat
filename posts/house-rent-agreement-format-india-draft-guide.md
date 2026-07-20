@@ -2,8 +2,8 @@
 layout: layout.html
 title: "House Rent Agreement Format India: 11-Month Draft, Legal Clauses & Rules"
 description: "Download ready-to-use House Rent Agreement Format for India (11 Months). Learn stamp duty rules, essential legal clauses, notarization vs registration, and tenant rights."
-date: "2026-07-21"
-display_date: "July 21, 2026"
+date: 2026-07-20
+display_date: "July 20, 2026"
 category: "Legal Formats"
 tags: ["Rent Agreement", "Legal Format", "House Rental Draft", "Leave and License", "Tenant Rights", "Property Law India"]
 icon: "home"
