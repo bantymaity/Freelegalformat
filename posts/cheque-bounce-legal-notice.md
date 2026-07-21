@@ -3,8 +3,8 @@ layout: layout.html
 tags: post
 title: "Cheque Bounce Legal Notice Format: Section 138 Draft & Recovery Guide (2026)"
 description: "Has your cheque bounced in India? Download a free legal notice format under Section 138 of NI Act. Learn statutory timelines, legal rules, and court procedure."
-date: 2026-07-20
-display_date: "July 20, 2026"
+date: 2026-07-21
+display_date: "July 21, 2026"
 category: legal
 category_name: "General Legal"
 tag_class: tag-legal
