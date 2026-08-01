@@ -3,7 +3,7 @@ layout: layout.html
 tags: post
 title: "Non-Disclosure Agreement (NDA) Format in India: Free Templates for Startups & Freelancers (2026)"
 description: "Protect your business ideas and client data. Get free, legally binding Non-Disclosure Agreement (NDA) formats for startups, freelancers, and employees in India."
-date: 2026-08-1
+date: "2026-08-01"
 display_date: "August 1, 2026"
 category: legal
 category_name: "Business & Corporate"
